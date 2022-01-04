@@ -22,8 +22,6 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  border-left: #093a25 solid 20px;
-  border-right: #093a25 solid 20px;
   box-shadow: 1px 0px 15px 0px rgb(0 0 0 / 75%),
     -1px 0px 15px 0px rgb(0 0 0 / 75%);
 }
@@ -33,9 +31,10 @@ body {
 
 .welcome {
   position: relative;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
+  color: #efbd7b;
 }
 .main-names {
-  font-size: 5rem;
+  font-size: 8rem;
 }
