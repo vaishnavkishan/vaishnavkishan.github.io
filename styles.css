@@ -9,7 +9,7 @@ body {
 
 #container {
   height: 100vh;
-  background-color: #032616;
+  background-color: #212227;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,10 +31,23 @@ body {
 
 .welcome {
   position: relative;
-  font-size: 4rem;
+  font-size: 6rem;
   text-align: center;
   color: #efbd7b;
+  line-height: 1;
 }
 .main-names {
   font-size: 8rem;
+}
+.button-container button {
+  border: 0;
+  font-size: 8rem;
+  background: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: #f0bd7b;
+  border-radius: 100%;
+  padding: 20px;
+  margin: 25px;
 }
