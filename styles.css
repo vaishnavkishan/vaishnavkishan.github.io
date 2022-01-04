@@ -51,3 +51,18 @@ body {
   padding: 20px;
   margin: 25px;
 }
+
+/* Couple*/
+.couple-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+.couple-container img {
+  width: 300px;
+  position: relative;
+  border-radius: 100%;
+  margin: 20px;
+  border: 3px solid #f0bd7b;
+  box-shadow: 1px 1px 15px 5px #f0bd7b52;
+}
