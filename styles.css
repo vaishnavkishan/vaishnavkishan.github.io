@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Exmouth";
+  src: url("fonts/exmouth_.ttf");
+}
+
+body {
+  font-family: Exmouth;
+}
+
+#container {
+  height: 100vh;
+  background-color: #032616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg {
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-left: #093a25 solid 20px;
+  border-right: #093a25 solid 20px;
+  box-shadow: 1px 0px 15px 0px rgb(0 0 0 / 75%),
+    -1px 0px 15px 0px rgb(0 0 0 / 75%);
+}
+
+.first-article {
+}
+
+.welcome {
+  position: relative;
+  font-size: 3rem;
+  text-align: center;
+}
+.main-names {
+  font-size: 5rem;
+}
