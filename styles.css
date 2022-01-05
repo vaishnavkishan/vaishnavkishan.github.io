@@ -40,6 +40,15 @@ body {
 .main-names {
   font-size: 8rem;
 }
+
+@keyframes arrow-shadow {
+  from {
+    box-shadow: 5px 5px 5px 3px #c2734b;
+  }
+  to {
+    box-shadow: 5px 5px 30px 3px #c2734b;
+  }
+}
 .button-container .button {
   border: 0;
   font-size: 8rem;
@@ -51,6 +60,12 @@ body {
   border-radius: 100%;
   padding: 20px;
   margin: 25px;
+  box-shadow: 5px 5px 30px 3px #c2734b;
+  animation-name: arrow-shadow;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .button-container i {
   padding-left: 8px;
@@ -70,4 +85,11 @@ body {
   margin: 20px;
   border: 3px solid #f0bd7b;
   box-shadow: 1px 1px 15px 5px #f0bd7b52;
+}
+.couple-container img.icon {
+  border-radius: 0;
+  width: 150px;
+  border: 0;
+  margin: 0;
+  box-shadow: none;
 }
