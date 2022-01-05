@@ -53,8 +53,6 @@ body {
   border: 0;
   font-size: 8rem;
   position: fixed;
-  bottom: 0;
-  right: 0;
   background: #f0bd7b;
   color: #131419;
   border-radius: 100%;
@@ -63,9 +61,16 @@ body {
   box-shadow: 5px 5px 30px 3px #c2734b;
   animation-name: arrow-shadow;
   animation-duration: 4s;
-  animation-delay: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+}
+.button-container .next-button {
+  bottom: 0;
+  right: 0;
+}
+.button-container .prev-button {
+  bottom: 0;
+  left: 0;
 }
 .button-container i {
   padding-left: 8px;
@@ -73,6 +78,18 @@ body {
 }
 
 /* Couple*/
+
+@keyframes couple-icon {
+  0% {
+    transform: rotate(0deg) translate(-5px, -5px);
+  }
+  50% {
+    transform: rotate(15deg) translate(5px, 5px);
+  }
+  100% {
+    transform: rotate(0deg) translate(10px, -5px);
+  }
+}
 .couple-container {
   display: flex;
   justify-content: center;
@@ -92,4 +109,8 @@ body {
   border: 0;
   margin: 0;
   box-shadow: none;
+  animation-name: couple-icon;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
