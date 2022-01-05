@@ -18,6 +18,11 @@ body {
   margin-right: auto;
   margin-bottom: 136px;
 }
+#welcome-page #container {
+  align-items: center;
+  height: 100vh;
+  /* height: calc(100vh + 136px); */
+}
 
 .bg {
   height: 100vh;
@@ -83,6 +88,10 @@ body {
 .button-container .info-button {
   bottom: 0;
   left: 200px;
+}
+#welcome-page .button-container .info-button {
+  bottom: 0;
+  left: 0;
 }
 .button-container .locate-button {
   bottom: 0;
@@ -175,4 +184,14 @@ img.couple-animated {
   100% {
     border-color: #ff0000;
   }
+}
+
+/* Venu */
+#venue-page .first-article {
+  background-color: #f0bd7bdb;
+  font-size: 6rem;
+  color: #191a20;
+  position: relative;
+  margin-top: 200px;
+  text-align: center;
 }
