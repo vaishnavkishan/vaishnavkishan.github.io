@@ -51,7 +51,7 @@ body {
 }
 .button-container .button {
   border: 0;
-  font-size: 8rem;
+  font-size: 6rem;
   position: fixed;
   background: #f0bd7b;
   color: #131419;
@@ -72,9 +72,22 @@ body {
   bottom: 0;
   left: 0;
 }
+.button-container .info-button {
+  bottom: 0;
+  left: 200px;
+}
+.button-container .locate-button {
+  bottom: 0;
+  right: 200px;
+}
 .button-container i {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 0 6px;
+}
+.button-container .info-button i {
+  padding: 0 30px;
+}
+.button-container .locate-button i {
+  padding: 0 12px;
 }
 
 /* Couple*/
