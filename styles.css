@@ -159,6 +159,7 @@ img.couple-animated {
   border: 0;
   margin: 0;
   box-shadow: none;
+  z-index: 1;
   animation-name: couple-icon;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -173,14 +174,55 @@ img.couple-animated {
 }
 
 /* Venue */
+@keyframes venue-card {
+  from {
+    transform: rotate3d(1, 1, 0, 0deg) translate(0px, 0px);
+    box-shadow: none;
+  }
+  to {
+    transform: rotate3d(1, 1, 0, 31deg) translate(10px, 44px);
+    box-shadow: 20px -20px 3px 3px #6e3535;
+  }
+}
 #venue-page {
   font-family: "Be Vietnam Pro", sans-serif;
 }
 #venue-page .first-article {
+  margin-top: 100px;
+}
+#venue-page .first-article .address {
   background-color: #f0bd7bdb;
-  font-size: 6rem;
+  font-size: 4rem;
   color: #191a20;
   position: relative;
-  margin-top: 200px;
+  margin: 25px;
+  text-align: center;
+  border-radius: 30px;
+  animation-name: venue-card;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+.address {
+  padding: 20px;
+}
+.address i.fas {
+  font-size: 6rem;
+  color: #191a20;
+  margin: 10px;
+  padding: 10px;
+}
+.address .card-title {
+  font-size: 6rem;
+  text-align: left;
+}
+.address .card-body {
+  font-size: 4rem;
+  text-align: left;
+  border-top: 1px solid #191a20;
+  border-bottom: 1px solid #191a20;
+}
+.address .card-button {
+  font-size: 6rem;
   text-align: center;
 }
