@@ -2,6 +2,10 @@
   font-family: "Exmouth";
   src: url("fonts/exmouth_.ttf");
 }
+@font-face {
+  font-family: "Vollkorn";
+  src: url("fonts/Vollkorn-Italic-VariableFont_wght.ttf");
+}
 
 body {
   font-family: Exmouth;
@@ -20,12 +24,12 @@ body {
 }
 #welcome-page #container {
   align-items: center;
-  height: 100vh;
-  /* height: calc(100vh + 136px); */
+  height: 100%;
+  margin-bottom: 0;
 }
 
 .bg {
-  height: 100vh;
+  height: 100%;
   max-width: calc(100vh * 0.56);
   margin-left: auto;
   margin-right: auto;
@@ -107,6 +111,12 @@ body {
   padding: 0 12px;
 }
 
+/* Welcome */
+
+#welcome-page {
+  font-family: "Pacifico", "Vollkorn", cursive;
+}
+
 /* Couple*/
 
 @keyframes couple-icon {
@@ -162,31 +172,10 @@ img.couple-animated {
   align-items: center;
 }
 
-@keyframes rainbow-border {
-  0% {
-    border-color: #9400d3;
-  }
-  15% {
-    border-color: #4b0082;
-  }
-  30% {
-    border-color: #0000ff;
-  }
-  50% {
-    border-color: #00ff00;
-  }
-  65% {
-    border-color: #ffff00;
-  }
-  80% {
-    border-color: #ff7f00;
-  }
-  100% {
-    border-color: #ff0000;
-  }
+/* Venue */
+#venue-page {
+  font-family: "Be Vietnam Pro", sans-serif;
 }
-
-/* Venu */
 #venue-page .first-article {
   background-color: #f0bd7bdb;
   font-size: 6rem;
