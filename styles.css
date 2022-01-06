@@ -7,6 +7,30 @@
   src: url("fonts/Vollkorn-Italic-VariableFont_wght.ttf");
 }
 
+@keyframes rainbow-color {
+  0% {
+    color: #9400d3;
+  }
+  15% {
+    color: #4b0082;
+  }
+  30% {
+    color: #0000ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  65% {
+    color: #ffff00;
+  }
+  80% {
+    color: #ff7f00;
+  }
+  100% {
+    color: #ff0000;
+  }
+}
+
 body {
   font-family: Exmouth;
   background-color: #212227;
@@ -48,7 +72,7 @@ body {
   font-size: 6rem;
   text-align: center;
   color: #efbd7b;
-  line-height: 1;
+  line-height: 1.5;
 }
 .main-names {
   font-size: 8rem;
@@ -97,6 +121,12 @@ body {
   bottom: 0;
   left: 200px;
 }
+.button-container .party-button.animated {
+  animation-name: rainbow-color;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
 #welcome-page .button-container .info-button {
   bottom: 0;
   left: 0;
@@ -113,6 +143,10 @@ body {
 }
 .button-container .locate-button i {
   padding: 0 12px;
+}
+.button-container .party-button i {
+  font-size: 80px;
+  padding: 8px;
 }
 
 /* Welcome */

@@ -52,6 +52,10 @@
         $(".party-button").click(function () {
             start();
             stop();
+            $(".button-container .party-button").addClass("animated");
+            setTimeout(function () {
+                $(".button-container .party-button").removeClass("animated");
+            }, 5000);
         });
     });
 
