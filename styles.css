@@ -93,6 +93,10 @@ body {
   bottom: 0;
   left: 200px;
 }
+.button-container .party-button {
+  bottom: 0;
+  left: 200px;
+}
 #welcome-page .button-container .info-button {
   bottom: 0;
   left: 0;

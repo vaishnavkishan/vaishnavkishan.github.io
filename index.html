@@ -27,6 +27,7 @@
         <a href="#" class="button info-button"><i class="fas fa-info"></i></a>
         <a href="venue.html" class="button locate-button"><i class="fas fa-map-marker-alt"></i></a>
         <a href="information.html" class="button next-button"><i class="fas fa-arrow-right"></i></a>
+        <a class="button party-button"><i class="fas fa-air-freshener"></i></a>
     </div>
 
     <div id="container">
@@ -44,5 +45,32 @@
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script> -->
+<script src="scripts/confetti.js"></script>
+<script>
+    // for starting the confetti 
+    $(document).ready(function () {
+        $(".party-button").click(function () {
+            start();
+            stop();
+        });
+    });
+
+    const start = () => {
+        setTimeout(function () {
+            confetti.start()
+        }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+    };
+
+    //  for stopping the confetti 
+
+    const stop = () => {
+        setTimeout(function () {
+            confetti.stop()
+        }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+    };
+    // after this here we are calling both the function so it works
+    start();
+    stop();
+</script>
 
 </html>
