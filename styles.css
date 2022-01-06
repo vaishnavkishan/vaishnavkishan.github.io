@@ -135,6 +135,10 @@ body {
   bottom: 0;
   right: 200px;
 }
+.button-container .pdf-button {
+  bottom: 0;
+  right: 400px;
+}
 .button-container i {
   padding: 0 6px;
 }
