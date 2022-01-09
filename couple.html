@@ -50,18 +50,20 @@
     crossorigin="anonymous"></script> -->
 <script>
     $(document).ready(function () {
-        $(window).scroll(function () {
-            $("#media").click();
-        });
+        $("#media").click();
         $("#media").click(function () {
-            if ($("#media").find("i").hasClass("fa-play")) {
+            if ($("#audio")[0].paused) {
                 $("#audio")[0].play();
                 $("#media").find("i").removeClass("fa-play");
                 $("#media").find("i").addClass("fa-pause");
+                $("#media").find("i").css("padding-left", "6px");
+                $("#media").find("i").css("font-size", "6rem");
             } else {
                 $("#audio")[0].pause();
                 $("#media").find("i").removeClass("fa-pause");
                 $("#media").find("i").addClass("fa-play");
+                $("#media").find("i").css("padding-left", "12px");
+                $("#media").find("i").css("font-size", "5.5rem");
             }
         });
     });

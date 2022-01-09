@@ -147,18 +147,35 @@ body {
     transform: rotate(0deg) translate(10px, -5px);
   }
 }
+
+@keyframes photo-flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
 .couple-container {
   display: flex;
   justify-content: center;
   align-items: stretch;
 }
 .couple-container img {
-  /* width: 300px; */
   position: relative;
   border-radius: 100%;
   margin: 20px;
   border: 3px solid #f0bd7b;
   box-shadow: 1px 1px 15px 5px #f0bd7b52;
+
+  animation-name: photo-flip;
+  animation-duration: 1s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .couple-container img.icon {
   border-radius: 0;
