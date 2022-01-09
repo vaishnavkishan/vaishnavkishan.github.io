@@ -50,19 +50,12 @@
     crossorigin="anonymous"></script> -->
 <script>
     $(document).ready(function () {
-        $("#audio")[0].play(function () {
+        const audio = document.querySelector('audio');
+        audio.addEventListener('play', (event) => {
             applyPause();
         });
-        $("#media").click(function () {
-            if ($("#audio")[0].paused) {
-                $("#audio")[0].play();
-                $("#media").find("i").removeClass("fa-play");
-                applyPause();
-            } else {
-                $("#audio")[0].pause();
-                $("#media").find("i").removeClass("fa-pause");
-                applyPlay();
-            }
+        audio.addEventListener('pause', (event) => {
+            applyPlay();
         });
         function applyPause() {
             $("#media").find("i").addClass("fa-pause");
