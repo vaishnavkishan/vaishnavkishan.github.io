@@ -50,9 +50,9 @@
     crossorigin="anonymous"></script> -->
 <script>
     $(document).ready(function () {
-        if ($("#audio")[0].paused) {
+        $("#audio")[0].play(function () {
             applyPause();
-        }
+        });
         $("#media").click(function () {
             if ($("#audio")[0].paused) {
                 $("#audio")[0].play();
