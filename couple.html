@@ -50,8 +50,8 @@
     crossorigin="anonymous"></script> -->
 <script>
     $(document).ready(function () {
-        if ($("#audio")[0].paused) {
-            applyPause();
+        if ($("#audio")[0].play) {
+            applyPlay();
         }
         $("#media").click(function () {
             if ($("#audio")[0].paused) {
@@ -61,15 +61,17 @@
             } else {
                 $("#audio")[0].pause();
                 $("#media").find("i").removeClass("fa-pause");
-                $("#media").find("i").addClass("fa-play");
-                $("#media").find("i").css("padding-left", "12px");
-                $("#media").find("i").css("font-size", "5.5rem");
             }
         });
         function applyPause() {
             $("#media").find("i").addClass("fa-pause");
             $("#media").find("i").css("padding-left", "6px");
             $("#media").find("i").css("font-size", "6rem");
+        }
+        function applyPlay() {
+            $("#media").find("i").addClass("fa-play");
+            $("#media").find("i").css("padding-left", "12px");
+            $("#media").find("i").css("font-size", "5.5rem");
         }
     });
 </script>
