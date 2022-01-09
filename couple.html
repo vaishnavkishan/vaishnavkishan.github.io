@@ -50,6 +50,7 @@
     crossorigin="anonymous"></script> -->
 <script>
     $(document).ready(function () {
+        applyPause();
         const audio = document.querySelector('audio');
         audio.addEventListener('play', (event) => {
             applyPause();
@@ -57,12 +58,23 @@
         audio.addEventListener('pause', (event) => {
             applyPlay();
         });
+        $("#media").click(function () {
+            if ($("#audio")[0].paused) {
+                $("#audio")[0].play();
+                applyPause();
+            } else {
+                $("#audio")[0].pause();
+                applyPlay();
+            }
+        });
         function applyPause() {
+            $("#media").find("i").removeClass("fa-play");
             $("#media").find("i").addClass("fa-pause");
             $("#media").find("i").css("padding-left", "6px");
             $("#media").find("i").css("font-size", "6rem");
         }
         function applyPlay() {
+            $("#media").find("i").removeClass("fa-pause");
             $("#media").find("i").addClass("fa-play");
             $("#media").find("i").css("padding-left", "12px");
             $("#media").find("i").css("font-size", "5.5rem");
