@@ -35,9 +35,11 @@ body {
   font-family: Exmouth;
   background-color: #212227;
 }
+.gu {
+  font-family: "Mogra", cursive;
+}
 
 #container {
-  /* height: 100vh; */
   width: calc(100vh * 0.56);
   background-color: #212227;
   display: flex;
@@ -47,6 +49,7 @@ body {
   margin-bottom: 136px;
 }
 #welcome-page #container {
+  flex-flow: wrap;
   align-items: center;
   height: 100%;
   margin-bottom: 0;
@@ -84,6 +87,42 @@ body {
   }
   to {
     box-shadow: 5px 5px 30px 3px #c2734b;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(100vw);
+  }
+  50% {
+    transform: translateX(100vw);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(100vw);
+  }
+  50% {
+    transform: translateX(100vw);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 .button-container {
@@ -127,13 +166,38 @@ body {
   font-size: 80px;
   padding: 8px;
 }
+.button-container .pdf-button i {
+  font-size: 75px;
+  padding: 0 20px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: auto;
+}
+.button-container .home-button i {
+  padding: 6px 0px;
+  font-size: 80px;
+}
 
 /* Welcome */
 
 #welcome-page {
   font-family: "Pacifico", "Vollkorn", cursive;
 }
+.first-article.en .welcome {
+  animation-name: fade-out;
+  animation-delay: 5s;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 
+.first-article.gu .welcome {
+  animation-name: fade-in;
+  animation-delay: 5s;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 /* Couple*/
 
 @keyframes couple-icon {
