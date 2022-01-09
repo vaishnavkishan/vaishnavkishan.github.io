@@ -50,8 +50,8 @@
     crossorigin="anonymous"></script> -->
 <script>
     $(document).ready(function () {
-        if ($("#audio")[0].play) {
-            applyPlay();
+        if ($("#audio")[0].paused) {
+            applyPause();
         }
         $("#media").click(function () {
             if ($("#audio")[0].paused) {
@@ -61,6 +61,7 @@
             } else {
                 $("#audio")[0].pause();
                 $("#media").find("i").removeClass("fa-pause");
+                applyPlay();
             }
         });
         function applyPause() {
