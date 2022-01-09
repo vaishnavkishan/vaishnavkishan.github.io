@@ -87,13 +87,16 @@ body {
   }
 }
 .button-container {
-  position: relative;
+  width: 100%;
+  position: fixed;
   z-index: 1;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
 }
 .button-container .button {
   border: 0;
   font-size: 6rem;
-  position: fixed;
   background: #f0bd7b;
   color: #131419;
   border-radius: 100%;
@@ -105,39 +108,11 @@ body {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-.button-container .next-button {
-  bottom: 0;
-  right: 0;
-}
-.button-container .prev-button {
-  bottom: 0;
-  left: 0;
-}
-.button-container .info-button {
-  bottom: 0;
-  left: 200px;
-}
-.button-container .party-button {
-  bottom: 0;
-  left: 200px;
-}
 .button-container .party-button.animated {
   animation-name: rainbow-color;
   animation-duration: 5s;
   animation-iteration-count: 2;
   animation-direction: alternate;
-}
-#welcome-page .button-container .info-button {
-  bottom: 0;
-  left: 0;
-}
-.button-container .locate-button {
-  bottom: 0;
-  right: 200px;
-}
-.button-container .pdf-button {
-  bottom: 0;
-  right: 400px;
 }
 .button-container i {
   padding: 0 6px;
