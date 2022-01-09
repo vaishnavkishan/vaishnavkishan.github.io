@@ -20,7 +20,7 @@
     <a href="couple.html"><img src="images/couple2.png" class="couple-animated"></a>
     <div class="button-container">
         <a href="index.html" class="button prev-button"><i class="fas fa-arrow-left"></i></a>
-        <a id="media" class="button media-button"><i class="fas fa-play"></i></a>
+        <div id="media" class="button media-button"><i class="fas fa-play"></i></div>
         <a href="#" class="button info-button"><i class="fas fa-info"></i></a>
         <a href="venue.html" class="button locate-button"><i class="fas fa-map-marker-alt"></i></a>
         <a href="#" class="button next-button"><i class="fas fa-arrow-right"></i></a>
@@ -50,14 +50,14 @@
     crossorigin="anonymous"></script> -->
 <script>
     $(document).ready(function () {
-        $("#media").click();
+        if ($("#audio")[0].paused) {
+            applyPause();
+        }
         $("#media").click(function () {
             if ($("#audio")[0].paused) {
                 $("#audio")[0].play();
                 $("#media").find("i").removeClass("fa-play");
-                $("#media").find("i").addClass("fa-pause");
-                $("#media").find("i").css("padding-left", "6px");
-                $("#media").find("i").css("font-size", "6rem");
+                applyPause();
             } else {
                 $("#audio")[0].pause();
                 $("#media").find("i").removeClass("fa-pause");
@@ -66,6 +66,11 @@
                 $("#media").find("i").css("font-size", "5.5rem");
             }
         });
+        function applyPause() {
+            $("#media").find("i").addClass("fa-pause");
+            $("#media").find("i").css("padding-left", "6px");
+            $("#media").find("i").css("font-size", "6rem");
+        }
     });
 </script>
 
