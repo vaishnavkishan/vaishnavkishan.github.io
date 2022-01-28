@@ -184,7 +184,7 @@ body {
   font-family: "Pacifico", "Vollkorn", cursive;
 }
 .first-article.en .welcome {
-  animation-name: fade-out;
+  /* animation-name: fade-out; */
   animation-delay: 5s;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -192,7 +192,7 @@ body {
 }
 
 .first-article.gu .welcome {
-  animation-name: fade-in;
+  /* animation-name: fade-in; */
   animation-delay: 5s;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -235,7 +235,7 @@ body {
   border: 3px solid #f0bd7b;
   box-shadow: 1px 1px 15px 5px #f0bd7b52;
 
-  animation-name: photo-flip;
+  /* animation-name: photo-flip; */
   animation-duration: 1s;
   animation-delay: 4s;
   /* animation-iteration-count: infinite; */
